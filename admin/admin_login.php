@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Login - Student Control Panel</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title">Student Control Panel</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
@@ -54,9 +54,13 @@
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">Remember Me
                                     </label>
+                                    <button type="button" class="btn btn-link col-md-offset-4">Password?</button>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="../index.html" class="btn btn-lg btn-success btn-block">Login</a>
+
+
+
+                                <a href="admin_class.html" class="btn btn-lg btn-success btn-block">Login</a>
                             </fieldset>
                         </form>
                     </div>
