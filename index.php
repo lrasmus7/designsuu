@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta http-equiv="refresh" content="0; url="http://localhost/index.php?id=1" />-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -100,7 +101,7 @@
                         <li><a href="#"><i class="fa fa-eye fa-fw"></i> Student View</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="admin_login.html"><i class="fa fa-sign-in fa-fw"></i> Login</a>
+                        <li><a href="admin/admin_login.html"><i class="fa fa-sign-in fa-fw"></i> Login</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -130,14 +131,23 @@
                                             <div class="panel-heading">
                                                 <h4>Project 1</h4>
                                             </div>
-                                                <div class="panel-body"><div id="repeat1" data-binding-id="repeat1" data-binding-repeat="project1Images.data project1Images.filename"> </div>
+                                                <div class="panel-body">
                                                     <div class="row">
-                                                            <div class="col-md-6"><figure><a href="#"><img src="{{imagedata[0].link}}{{imagedata[0].filename}}"  alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>{{imagedata.data[0].firstName}} {{imagedata.data[0].lastName}}</figcaption></figure> <!-- link to upload --></div>
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                            <div class="col-md-6" data-binding-repeat="{{project1Images.data}}" data-binding-id="repeat1"><figure><a href="#"><img src="{{link}}{{filename}}"  alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>{{firstName}} {{lastName}}</figcaption></figure> <!-- link to upload --></div>
+                                                            
+                                                            
+<!--                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> </div>
                                                   </div>
                                                      <div class="row">
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
+                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> </div>
+                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> </div>-->
+                                                   
+                                                   
                                                      </div>
                                                 </div>
                                             <div class="panel-footer">
@@ -154,12 +164,14 @@
                                             </div>
                                                 <div class="panel-body">
                                                     <div class="row">
-                                                            <div class="col-md-6"><figure><a href="#"><img src="{{project2Images.data[0].link}}{{project2Images.data[0].filename}}" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>{{imagedata.data[0].firstName}} {{imagedata.data[0].lastName}}</figcaption></figure> <!-- link to upload --></div>
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
+                                                            <div class="col-md-6" data-binding-repeat="{{project2Images.data}}" data-binding-id="repeat2"><figure><a href="#"><img src="{{link}}{{filename}}" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>{{firstName}} {{lastName}}</figcaption></figure></div>
+                                                           
+                                                           <!-- <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure></div>
                                                      </div>
                                                      <div class="row">
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
+                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure></div>
+                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure></div>-->
+                                                            
                                                      </div>   
                                                 </div>
                                             <div class="panel-footer">
@@ -176,13 +188,7 @@
                                             </div>
                                                 <div class="panel-body">
                                                     <div class="row">
-                                                            <div class="col-md-6">
-                                                              <figure><a href="#"><img src="{{project3Images.data[0].link}}{{project3Images.data[0].filename}}" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>{{imagedata.data[0].firstName}} {{imagedata.data[0].lastName}}</figcaption></figure> <!-- link to upload --></div>
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
-                                                  </div>
-                                                     <div class="row">
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
-                                                            <div class="col-md-6"><figure><a href="#"><img src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>Student Name</figcaption></figure> <!-- link to upload --></div>
+                                                                                                                        <div class="col-md-6" data-binding-repeat="{{project3Images.data}}" data-binding-id="repeat2"><figure><a href="#"><img src="{{link}}{{filename}}" alt="thumbnail.png" class="img-responsive center-block"></a><figcaption>{{firstName}} {{lastName}}</figcaption></figure></div>
                                                      </div>   
                                                 </div>
                                             <div class="panel-footer">
